@@ -1,16 +1,23 @@
-/* white #aaaaaa */
+/* white ##919191 */
 /* brown color #2B1E16 */
 
 .info {
-  background: #aaaaaa;
+  background: url(/img/slate.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 body {
   font-family: 'mahalo', sans-serif;
+  color: #3560d4
 }
 
+/*Social icons*/
+
 .primary-color {
-  color: #2B1E16;
+  color: #3560d4;
+  text-shadow: 0 0 3px rgb(12, 12, 12), 0 0 5px rgb(11, 11, 12);
 }
 
 .info h2 {
@@ -24,3 +31,124 @@ body {
 .info a:hover {
   color: #554646;
 }
+
+/*end */
+
+/* #### HEADER #### */
+
+#header {
+  min-height: 100%;
+  background: url(../img/br.jpg);
+  opacity: 0.79;
+  background-position: cover;
+  background-size: cover;
+  background-attachment: cover;
+  background-repeat: no-repeat;
+  position: bottom;
+}
+
+.height-90 {
+  min-height: calc(100vh -94px);
+}
+
+.banner h1 {
+  border-top: 6px dotted #3560d4;
+  border-bottom: 6px dotted #3560d4;
+  position: center;
+  animation: fromLeft;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fromLeft {
+  0%{
+    transform: translateX(-100px);
+    opacity: 0;
+  } 
+  50%{
+    transform: translateX(30px);
+  }
+  100%{
+    transform: translateX(0);
+    opacticy:  1;
+  }
+}
+
+.main-btn {
+  color: #3560d4;
+  font-size: 2rem;
+  border: 2px solid #3560d4;
+  transition: all 1s ease-in-out;
+}
+
+.main-btn:hover {
+  color: #193a96;
+  border: 2px solid #3560d4;
+  background: #526ca5;
+}
+
+.poke-btn {
+  animation: fromRight;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fromRight {
+  0%{
+    transform: translateX(100px);
+  } 
+  50%{
+    transform: translateX(-30px);
+  }
+  100%{
+    transform: translateX(0);
+    opacticy:  1;
+  }
+}
+
+.header-link {
+  display: inline-block;
+  position: relative;
+  bottom: 5%;
+  left: 50%;
+  background: #869bd6;
+  border-radius: 10px;
+  transition: all 2s ease;
+  animation: fromBottom;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.header-link:hover {
+  color: #3560d4;
+}
+
+@keyframes fromBottom {
+  0% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
