@@ -54,7 +54,6 @@ body {
 .banner h1 {
   border-top: 6px dotted #3560d4;
   border-bottom: 6px dotted #3560d4;
-  position: center;
   animation: fromLeft;
   animation-duration: 4s;
   animation-fill-mode: forwards;
