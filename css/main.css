@@ -9,8 +9,12 @@
 }
 
 body {
-  font-family: 'mahalo', sans-serif;
-  color: #3560d4
+  font-family: 'Londrina Solid', sans-serif;
+  color: #3560d4;
+  background: url(/img/lava.jpg)center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /*Social icons*/
@@ -135,9 +139,67 @@ body {
 }
 
 
+/* #### MENU ITEMS #### */
+.item-container {
+  position: relative;
+  /* for the link */
+  overflow: hidden;
+  background: #000000;
+  transition: all 2s ease;
+}
+
+.item-img {
+  transition: all 2s ease;
+}
+
+.item-container:hover .item-img {
+  transform: scale(1.2);
+  opacity: 0.5;
+}
+
+.item-link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #3560d4;
+  font-size: 2rem;
+  border-top: 3px solid #3560d4;
+  border-bottom: 3px solid #3560d4;
+  transition: all 2s ease;
+  opacity: 0.8;
+}
+
+.item-container:hover .item-link {
+  opacity: 1;
+}
+
+.item-link:hover{
+  color: #869bd6;
+  border: 3px solid #869bd6;
+  background: #869bd6;
+  color: #3560d4;
+}
+
+.item-container:hover {
+  outline: 10px solid #869bd6;
+  outline-offset: 0.8rem;
+}
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+/* #### END MENU ITEMS #### */
 
 
 
