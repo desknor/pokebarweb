@@ -2,7 +2,7 @@
 /* brown color #2B1E16 */
 
 .info {
-  background: url(/img/banner.jpeg);
+  background: url(/img/bar.jpeg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -10,8 +10,7 @@
 
 body {
   font-family: 'Londrina Solid', sans-serif;
-  color: #3560d4;
-  /* background: url(/img/hawaiianmangroves.jpg)center; */
+  color: #000000;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -21,8 +20,13 @@ body {
 /*Social icons*/
 
 .primary-color {
-  color: #3560d4;
-  text-shadow: 0 0 3px rgb(12, 12, 12), 0 0 5px rgb(11, 11, 12);
+  color: #000000;
+  text-shadow: 0 0 3px  rgb(187, 187, 187);
+}
+
+.secondary-color {
+  color: #2153dd;
+  text-shadow: 0 0 3px #8090bd;
 }
 
 .info h2 {
@@ -34,7 +38,7 @@ body {
 }
 
 .info a:hover {
-  color: #554646;
+  color: #58b8b8;
 }
 
 /*end */
@@ -43,7 +47,7 @@ body {
 
 #header {
   min-height: 100%;
-  background: url(../img/br.jpg);
+  background: url(../img/stone.jpg);
   opacity: 0.87;
   background-position: cover;
   background-size: cover;
@@ -57,8 +61,6 @@ body {
 }
 
 .banner h1 {
-  border-top: 6px dotted #3560d4;
-  border-bottom: 6px dotted #3560d4;
   animation: fromLeft;
   animation-duration: 4s;
   animation-fill-mode: forwards;
@@ -81,7 +83,7 @@ body {
 .main-btn {
   color: #3560d4;
   font-size: 2rem;
-  border: 2px solid #3560d4;
+  border: 2px solid #271820;
   transition: all 1s ease-in-out;
 }
 
@@ -144,7 +146,7 @@ body {
 
 #special-items {
   background: linear-gradient(rgba(255, 255 ,255 ,0.7),rgba(255,255,255,0.07)),
-  url(/img/hawaiianmangroves.jpg)center/cover fixed no-repeat;
+  url(/img/flowers.jpeg)center/cover fixed no-repeat;
 }
 
 .item-container {
@@ -169,12 +171,13 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  color: #3560d4;
+  color: #3d5caf;
+  text-shadow: 0 0 3px #8090bd;
   font-size: 2rem;
   border-top: 3px solid #3560d4;
   border-bottom: 3px solid #3560d4;
   transition: all 2s ease;
-  opacity: 0.8;
+  opacity: 1;
 }
 
 .item-container:hover .item-link {
@@ -200,7 +203,7 @@ body {
 
 #menu {
   background: linear-gradient(rgba(255, 255 ,255 ,0.7),rgba(255,255,255,0.07)),
-  url(/img/lava.jpg)center/cover fixed no-repeat;
+  url(/img/stone.jpg)center/cover fixed no-repeat;
 }
 
 
@@ -224,6 +227,11 @@ body {
 /* #### end menu #### */
 
 /* #####about##### */
+
+#about {
+  background: linear-gradient(rgba(255, 255 ,255 ,0.7),rgba(255,255,255,0.07)),
+  url(/img/about.jpeg)center/cover fixed no-repeat;
+}
 .about-pictures {
   position: relative;
 }
@@ -278,7 +286,14 @@ body {
 /* #####end about##### */
 
 
-
+/* #####footer##### */
+.footer {
+  background: url(/img/bar.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* #####end footer##### */
 
 
 
