@@ -25,6 +25,9 @@ body {
 
 #top-icons {
   background: url(/img/bar.png);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility:    hidden;
+  -ms-backface-visibility:     hidden;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -40,13 +43,7 @@ body {
 
 #top-icons a:hover {
   color:  rgb(223, 157, 96);
-}
-
-#top-icons {
-  background: url(/img/bar.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  text-shadow: 0 0 3px #000000;
 }
 
 #top-icons h2 {
@@ -74,6 +71,9 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   position: bottom;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility:    hidden;
+  -ms-backface-visibility:     hidden;
 }
 
 .height-90 {
@@ -110,7 +110,8 @@ body {
 
 .main-btn:hover {
   color: rgb(223, 157, 96);
-  border: 2px solid rgb(223, 157, 96);
+  text-shadow: 0 0 3px #000000;
+  border: 4px solid rgb(223, 157, 96);
 }
 
 /* pseudo class for .main-btn to play with animations */
@@ -138,8 +139,10 @@ body {
   position: absolute;
   bottom: 5%;
   left: 48.5%;
-  background: #1e48b9;
-  color: #00a2ff;
+  color:  #1e48b9;
+  text-shadow: 0 0 3px  rgb(0, 0, 0);
+  font-size: 2rem;
+  border: 4px solid #1e48b9;
   border-radius: 10px;
   transition: all 2s ease;
   animation: fromBottom;
@@ -148,8 +151,9 @@ body {
 }
 
 .header-link:hover {
-  color: #3560d4;
-  background: #e79548;
+  color: #e79548;
+  border: 4px solid #e79548;
+  text-shadow: 0 0 3px  rgb(0, 0, 0);
 }
 
 @keyframes fromBottom {
@@ -175,6 +179,9 @@ body {
   background-repeat: no-repeat;
   padding: 20px 20px;
   transition: all 1s ease;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility:    hidden;
+  -ms-backface-visibility:     hidden;
 }
 
 .navbar-background {
@@ -192,7 +199,7 @@ body {
 
 .nav-link {
   color: #000000;
-  text-shadow: 0 0 3px  rgb(70, 69, 69);
+  text-shadow: 0 0 3px  rgb(187, 187, 187);
   text-decoration: none;
   transition: all 2s ease;
   font-size: 35px;
@@ -214,6 +221,7 @@ body {
 
 .nav-btn:hover {
   color: #e79548;
+  text-shadow: 0 0 3px #000000;
   border: 2px solid #e79548;
 }
 
@@ -231,6 +239,9 @@ body {
 #bowls {
   background: linear-gradient(rgba(255, 255 ,255 ,0.7),rgba(255,255,255,0.07)),
   url(/img/flowers.jpeg)center/cover fixed no-repeat;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility:    hidden;
+  -ms-backface-visibility:     hidden;
 }
 
 .item-container {
@@ -291,11 +302,14 @@ body {
 #menu {
   background: linear-gradient(rgba(255, 255 ,255 ,0.7),rgba(255,255,255,0.07)),
   url(/img/stone.jpg)center/cover fixed no-repeat;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility:    hidden;
+  -ms-backface-visibility:     hidden;
 }
 
 
 .special {
-  border: 3px solid rgb(223, 157, 96);
+  border: 3px solid #e79548;
   position: relative;
 }
 
@@ -303,7 +317,7 @@ body {
   position: absolute;
   top: 0;
   right: 10%;
-  background: rgb(223, 157, 96);
+  background: #e79548;;
   padding: 0.04rem;
 }
 /* #### end menu #### */
@@ -313,19 +327,24 @@ body {
 #about {
   background: linear-gradient(rgba(255, 255 ,255 ,0.7),rgba(255,255,255,0.07)),
   url(/img/about.jpeg)center/cover fixed no-repeat;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility:    hidden;
+  -ms-backface-visibility:     hidden;
 }
 .about-pictures {
   position: relative;
 }
 
 .about-image {
+  margin: 100px 0px;
   position: absolute;
-  width: 195px;
+  width: 100%;
+  height: auto;
   transition: all 2s ease;
   opacity: 0.9;
 }
 
-.img-1 {
+/* .img-1 {
   left: 0%;
   top: 0%;
 }
@@ -350,12 +369,12 @@ body {
 .img-5 {
   left: 0%;
   top: 45%;
-}
+} */
 
 .about-image:hover {
-  outline: 10px solid #869bd6;
+  outline: 10px solid #e79548;
   outline-offset: 0.8rem;
-  transform: scale(1.3) rotate(20deg);
+  /* transform: scale(1.3) rotate(20deg); */
   z-index: 30;
   opacity: 1;
 }
@@ -369,11 +388,30 @@ p.abparagraph {
 }
 /* #####end about##### */
 
+#hours {
+  background: linear-gradient(rgba(255, 255 ,255 ,0.7),rgba(255,255,255,0.07)),
+  url(/img/stone.jpg)center/cover fixed no-repeat;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility:    hidden;
+  -ms-backface-visibility:     hidden;
+}
+
 /* Contact */
 #contact {
   background: linear-gradient(rgba(255, 255 ,255 ,0.7),rgba(255,255,255,0.07)),
-  url(/img/stone.jpg)center/cover fixed no-repeat;
+  url(/img/flowers.jpeg)center/cover fixed no-repeat;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility:    hidden;
+  -ms-backface-visibility:     hidden;
 }
+
+a[href^="tel"] {
+  color: inherit; /* Inherit text color of parent element. */
+  text-shadow: 0 0 3px  rgb(187, 187, 187);
+  text-decoration: none; /* Remove underline. */
+  /* Additional css `propery: value;` pairs here */
+}
+
 /* end of contact */
 
 /* #####footer##### */
@@ -382,10 +420,13 @@ p.abparagraph {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility:    hidden;
+  -ms-backface-visibility:     hidden;
 }
 
 #footicon a:hover {
-  color:  rgb(223, 157, 96);
+  color:  rgb#e79548;
 }
 
 #footicon {
@@ -393,6 +434,9 @@ p.abparagraph {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility:    hidden;
+  -ms-backface-visibility:     hidden;
 }
 
 #footicon h2 {
@@ -404,33 +448,36 @@ p.abparagraph {
 }
 
 #footicon a:hover {
-  color:  rgb(223, 157, 96);
+  color: #e79548;
 }
 
 /* this is for the up arrowkey */
 
 #back-to-top {
-  color:  #7590dd;
-  background: #7590dd;
+  color: #1e48b9; 
   text-shadow: 0 0 3px  rgb(0, 0, 0);
   font-size: 2rem;
-  border: 2px solid #7590dd;
+  border: 4px solid #1e48b9;
   transition: all 1s ease-in-out;
   border-radius: 10px;
   display: inline-block;
 }
 
 #back-to-top:hover {
-  color: rgb(223, 157, 96);
-  background: rgb(223, 157, 96);
-  border: 2px solid rgb(223, 157, 96);
+  color: #e79548;;
+  border: 4px solid #e79548;
 }
 
 .scrollTop {
   position: fixed;
-  bottom: 70px;
+  bottom: 145px;
   right: 20px;
 }
+
+.deschdev {
+  text-shadow: 0 0 3px  rgb(187, 187, 187);
+}
+
 /* #####end footer##### */
 
 
