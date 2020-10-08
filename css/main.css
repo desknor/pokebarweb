@@ -179,9 +179,6 @@ body {
   background-repeat: no-repeat;
   padding: 20px 20px;
   transition: all 1s ease;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility:    hidden;
-  -ms-backface-visibility:     hidden;
 }
 
 .navbar-background {
@@ -194,7 +191,7 @@ body {
 }
 
 .narbar-brand:hover {
-  color: #000000
+  color: #e79548
 }
 
 .nav-link {
@@ -206,7 +203,7 @@ body {
 }
 
 .nav-link:hover {
-  color: rgb(223, 157, 96);
+  color: #e79548;
   text-shadow: 0 0 3px  rgb(0, 0, 0);
 }
 
@@ -229,6 +226,26 @@ body {
   border: 2px solid #e79548;
   padding: 5px;
   transition: all 2s ease;
+}
+
+.bar {
+  background: #e79548;
+  width: 30px;
+  height: 3px;
+  margin: 5px;
+  transition: all 0.5s ease;
+}
+
+.change .bar1 {
+  transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: rotate(45deg) translate(-5px,-8px);
 }
 
 /* #### end NAVBAR #### */
@@ -315,8 +332,8 @@ body {
 
 .special-text {
   position: absolute;
-  top: 0;
-  right: 10%;
+  bottom: 0%;
+  right: .05%;
   background: #e79548;;
   padding: 0.04rem;
 }
@@ -477,6 +494,7 @@ a[href^="tel"] {
 .deschdev {
   text-shadow: 0 0 3px  rgb(187, 187, 187);
 }
+
 
 /* #####end footer##### */
 
