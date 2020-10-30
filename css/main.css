@@ -24,7 +24,7 @@ body {
 }
 
 #top-icons {
-  background: url(/img/bar.png);
+  background: linear-gradient(rgba(285, 285, 285, 0.386),rgba(255,255,255,0.07)), url(/img/bar.jpeg);
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility:    hidden;
   -ms-backface-visibility:     hidden;
@@ -64,7 +64,7 @@ body {
 
 #header {
   min-height: calc(100vh - 94px);
-  background: url(../img/stone.jpg);
+  background: url(../img/stone.jpeg);
   opacity: 0.87;
   background-position: center;
   background-size: cover;
@@ -173,7 +173,7 @@ body {
 /* #### NAVBAR #### */
 
 .navbar {
-  background: url(/img/bar.png);
+  background: linear-gradient(rgba(285, 285, 285, 0.386),rgba(255,255,255,0.07)), url(/img/bar.jpeg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -261,6 +261,11 @@ body {
   -ms-backface-visibility:     hidden;
 }
 
+.bowlz {
+  height: 75%;
+  width: 75%;
+}
+
 .item-container {
   position: relative;
   /* for the link */
@@ -283,11 +288,11 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  color: #1e48b9;
-  text-shadow: 0 0 3px #00a2ff;
+  color: #e79548;
+  text-shadow: 0 0 3px #000000;
   font-size: 2.9rem;
-  border-top: 3px solid #3560d4;
-  border-bottom: 3px solid #3560d4;
+  border-top: 3px solid #e79548;
+  border-bottom: 3px solid #e79548;
   transition: all 2s ease;
   opacity: 1;
 }
@@ -300,6 +305,7 @@ body {
   border: 3px solid #e79548;
   background: rgb(223, 157, 96);
   color: #3560d4;
+  text-shadow: 0 0 3px #f1f1f1;
 }
 
 .item-container:hover {
@@ -308,7 +314,7 @@ body {
 }
 
 .bowlpic {
-  opacity: .8;
+  opacity: .7;
 }
 
 /* #### END bowls #### */
@@ -318,7 +324,7 @@ body {
 
 #menu {
   background: linear-gradient(rgba(255, 255 ,255 ,0.7),rgba(255,255,255,0.07)),
-  url(/img/stone.jpg)center/cover fixed no-repeat;
+  url(/img/stone.jpeg)center/cover fixed no-repeat;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility:    hidden;
   -ms-backface-visibility:     hidden;
@@ -407,7 +413,7 @@ p.abparagraph {
 
 #hours {
   background: linear-gradient(rgba(255, 255 ,255 ,0.7),rgba(255,255,255,0.07)),
-  url(/img/stone.jpg)center/cover fixed no-repeat;
+  url(/img/stone.jpeg)center/cover fixed no-repeat;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility:    hidden;
   -ms-backface-visibility:     hidden;
@@ -433,7 +439,7 @@ a[href^="tel"] {
 
 /* #####footer##### */
 #footer {
-  background: url(/img/bar.jpeg);
+  background: linear-gradient(rgba(285, 285, 285, 0.386),rgba(255,255,255,0.07)), url(/img/bar.jpeg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -447,7 +453,7 @@ a[href^="tel"] {
 }
 
 #footicon {
-  background: url(/img/bar.png);
+  background: linear-gradient(rgba(285, 285, 285, 0.386),rgba(255,255,255,0.07)), url(/img/bar.jpeg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -470,7 +476,7 @@ a[href^="tel"] {
 
 /* this is for the up arrowkey */
 
-#back-to-top {
+/* #back-to-top {
   color: #1e48b9; 
   text-shadow: 0 0 3px  rgb(0, 0, 0);
   font-size: 2rem;
@@ -483,16 +489,19 @@ a[href^="tel"] {
 #back-to-top:hover {
   color: #e79548;;
   border: 4px solid #e79548;
-}
+} */
 
-.scrollTop {
+/* .scrollTop {
   position: fixed;
   bottom: 145px;
   right: 20px;
-}
+} */
 
-.deschdev {
+a[href^="https://www.deschdev.com"] {
   text-shadow: 0 0 3px  rgb(187, 187, 187);
+  color: inherit; /* Inherit text color of parent element. */
+  text-shadow: 0 0 3px  rgb(187, 187, 187);
+  text-decoration: none;
 }
 
 
